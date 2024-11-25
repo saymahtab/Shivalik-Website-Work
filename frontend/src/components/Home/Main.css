@@ -1,0 +1,32 @@
+.main-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 120px); /* Adjusted to fit remaining viewport height */
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.overlay {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.image-slider {
+  width: 100%;
+  height: 100%; /* Fills the main container */
+}
+
+.slider-image {
+  width: 100%;
+  height: calc(100vh - 125px); /* Adjusted to fit the main container height */
+  background-position: center;
+  background-size: auto;
+  margin: auto;
+  /* background-size: contain;  */
+}

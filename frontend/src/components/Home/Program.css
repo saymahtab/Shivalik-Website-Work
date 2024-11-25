@@ -1,0 +1,51 @@
+/* styles.css */
+
+.bg-maroon {
+    background-color: #800000; /* Custom maroon background color */
+}
+
+/* Custom styling for carousel dots */
+.custom-dots li button:before {
+    color: #fff;
+    opacity: 0.75;
+    font-size: 12px;
+}
+
+.custom-dots li.slick-active button:before {
+    color: #f3f3f3;
+    opacity: 1;
+}
+
+/* Hover effect for cards */
+.ProgramCard:hover {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* Placement.css */
+
+.animate-marquee-left {
+    animation: marquee-left 10s linear infinite;
+  }
+  
+  .animate-marquee-right {
+    animation: marquee-right 10s linear infinite;
+  }
+  
+  @keyframes marquee-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes marquee-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
