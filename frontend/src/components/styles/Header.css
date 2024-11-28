@@ -108,3 +108,47 @@ left: 0; /* Moves the effect across the button */
   font-size: 1rem;
   color: #4a4a4a;
 }
+
+
+/* scrolled navbar apply button Styles */
+.nav-apply-now {
+  display: inline-block; /* Keeps the container around the button */
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-apply-now button {
+  position: relative; /* Enables the pseudo-element to align to the button itself */
+  border: 1px solid #000000;
+  border-radius: 4px;
+  color: #000;
+  background-color: transparent;
+  padding: 8px 14px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  z-index: 1; /* Places text above the overlay */
+  transition: color 0.4s ease;
+}
+
+.nav-apply-now button:hover {
+  color:black; /* Text color on hover */
+}
+
+/* Hover effect fill */
+.nav-apply-now::before {
+  content: "";
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  left: -100%; /* Start from the left of the button */
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* White fill on hover */
+  z-index: 0; /* Places the fill below the text */
+  transition: left 0.4s ease;
+}
+
+.nav-apply-now:hover::before {
+  left: 0; /* Moves the effect across the button */
+}

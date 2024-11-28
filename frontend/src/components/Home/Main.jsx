@@ -5,7 +5,7 @@ import 'swiper/css';
 
 const Main = () => {
   return (
-    <div className="main-container mt-36">
+    <div className="main-container ">
       {/* Overlay text */}
       <div className="overlay">
         <h1>Shivalik College</h1>

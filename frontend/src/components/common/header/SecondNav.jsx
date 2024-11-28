@@ -12,7 +12,7 @@ const SecondNav = () => {
 
   return (
     <div 
-      className="flex justify-between items-center bg-white shadow-md py-2 px-3 fixed w-full z-50 top-[2.5rem]"
+      className="flex justify-between items-center bg-white shadow-md py-2 px-3  w-full z-50 "
     >
       {/* Logo */}
       <div className="w-[270px]">
