@@ -5,9 +5,6 @@ import "swiper/css/pagination"; // Pagination styles
 import "swiper/css/navigation"; // Navigation styles
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
-import anmolimg from "../../assets/anmolplacement.png";
-import autodesk from "../../assets/autodeskimg.jpg";
-
 const students = [
   {
     name: "Anmol Singh Negi",
@@ -15,7 +12,7 @@ const students = [
     company: "AUTODESK",
     position: "SDE",
     lpa: "36.4 LPA",
-    img: anmolimg,
+    img: '/assets/anmolplacement.png',
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Shivalik college of Engineering's blend of technology and theory prepared us for the growing market.",
   },
@@ -25,7 +22,7 @@ const students = [
     company: "AUTODESK",
     position: "SDE",
     lpa: "36.4 LPA",
-    img: anmolimg,
+    img: '/assets/anmolplacement.png',
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Shivalik college of Engineering's blend of technology and theory prepared us for the growing market.",
   },
@@ -35,7 +32,7 @@ const students = [
     company: "AUTODESK",
     position: "SDE",
     lpa: "36.4 LPA",
-    img: anmolimg,
+    img: '/assets/anmolplacement.png',
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Shivalik college of Engineering's blend of technology and theory prepared us for the growing market.",
   },
@@ -124,7 +121,7 @@ const StudentTestimonials = () => {
                     <p className="font-semibold text-2xl">Placed at</p>
                     <div className="flex items-center mt-1">
                       <img
-                        src={autodesk}
+                        src='/assets/autodeskimg.jpg'
                         alt={student.company}
                         className="w-25 h-16"
                       />

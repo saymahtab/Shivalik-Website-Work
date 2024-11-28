@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import popup from "../../assets/shivalikpopup.jpg";
-
 
 const Popup = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -76,7 +74,7 @@ const Popup = () => {
             </div>
           ) : (
             <img
-              src={popup}
+              src={`/assets/shivalikpopup.jpg`}
               alt="Welcome"
               width="700"
               height="375"

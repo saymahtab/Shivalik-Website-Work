@@ -1,9 +1,4 @@
 import React from 'react';
-import lab1 from '../../assets/labs/lab1.png';
-import lab2 from '../../assets/labs/lab2.png';
-import lab3 from '../../assets/labs/lab3.png';
-import lab4 from '../../assets/labs/lab4.png';
-
 
 const ShivalikLabs = () => {
   return (
@@ -24,7 +19,9 @@ const ShivalikLabs = () => {
       </div>
 
       {/* Title and Description */}
-      <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-3 text-center">Shivalik Labs</h2>
+      <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-3 text-center">
+        Shivalik Labs
+      </h2>
       <p className="text-gray-600 text-center mb-8 text-base md:text-lg px-4">
         EXPERIENCE THE FINEST CSE EXPERIENCE CENTRES IN DEHRADUN
       </p>
@@ -44,12 +41,12 @@ const ShivalikLabs = () => {
 
         {/* Images Grid with Hover Effect */}
         <div className="md:col-span-3 grid grid-cols-2 grid-rows-2 gap-2">
-          {[lab1, lab2, lab3, lab4].map((src, idx) => (
+          {['/labs/lab1.png', '/labs/lab2.png', '/labs/lab3.png', '/labs/lab4.png'].map((src, idx) => (
             <img
               key={idx}
               src={src}
               alt={`Lab experience center ${idx + 1}`}
-              className="w-full h-[150px] md:h-[200px] object-cover rounded-lg transition-transform transform  hover:shadow-lg"
+              className="w-full h-[150px] md:h-[200px] object-cover rounded-lg transition-transform transform hover:shadow-lg"
             />
           ))}
         </div>

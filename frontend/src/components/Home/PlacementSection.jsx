@@ -1,82 +1,45 @@
 import React from 'react';
-import './Placement.css';
-
-import Accenture from '../../assets/Logo/accenture.jpg';
-import ADengineersContractors from '../../assets/Logo/adengineerscontractors.png';
-import advanta from '../../assets/Logo/advanta.png';
-import ais from '../../assets/Logo/ais.jpg';
-import amazon from '../../assets/Logo/amazon.jpg';
-import amber from '../../assets/Logo/amber.jpg';
-import anchor from '../../assets/Logo/anchor.png';
-import aptara from '../../assets/Logo/aptara.jpg';
-import aptaracorp from '../../assets/Logo/aptaracorp.jpg';
-import aryamasoftservices from '../../assets/Logo/aryamasoftservices.jpg';
-import aurobindo from '../../assets/Logo/aurobindo.jpg';
-import axis from '../../assets/Logo/axis.jpg';
-import bajaj from '../../assets/Logo/bajaj.jpg';
-import biocon from '../../assets/Logo/biocon.jpg';
-import bplogo from '../../assets/Logo/bp-logo.png';
-import byju from '../../assets/Logo/byju.jpg';
-import capgemini from '../../assets/Logo/capgemini.jpg';
-import ceat from '../../assets/Logo/ceat.jpg';
-import cipla from '../../assets/Logo/cipla.jpg';
-import cs from '../../assets/Logo/cs.png';
-import daffodil from '../../assets/Logo/daffodil.jpg';
-import dhoot from '../../assets/Logo/dhoot.jpg';
-import drreddys from '../../assets/Logo/drreddys.jpg';
-import dupoint from '../../assets/Logo/dupoint.jpg';
-import epicresearch from '../../assets/Logo/epicresearch.png';
-import evertech from '../../assets/Logo/evertech.jpg';
-import extramarks from '../../assets/Logo/extramarks.jpg';
-import focus from '../../assets/Logo/focus.jpg';
-import havels from '../../assets/Logo/havels.jpg';
-import hcl from '../../assets/Logo/hcl.jpg';
-import hitachi from '../../assets/Logo/hitachi.jpg';
-import honeywell from '../../assets/Logo/honeywell.jpg';
-import hp from '../../assets/Logo/hp.jpg';
-import ibms from '../../assets/Logo/ibms.jpg';
-import jaro from '../../assets/Logo/jaro.jpg';
-import jd from '../../assets/Logo/jd.png';
+import '../styles/Placement.css';
 
 const row1Logos = [
-  { src: Accenture, alt: 'Accenture' },
-  { src: ADengineersContractors, alt: 'AD Engineers Contractors' },
-  { src: advanta, alt: 'advanta' },
-  { src: ais, alt: 'ais' },
-  { src: amazon, alt: 'amazon' },
-  { src: anchor, alt: 'anchor' },
-  { src: amber, alt: 'amber' },
-  { src: aptaracorp, alt: 'aptaracorp' },
-  { src: aryamasoftservices, alt: 'aryamasoftservices' },
-  { src: aurobindo, alt: 'aurobindo' },
-  { src: axis, alt: 'axis' },
-  { src: drreddys, alt: "Dr Reddy's" },
-  { src: dupoint, alt: 'Dupont' },
-  { src: epicresearch, alt: 'Epic Research' },
-  { src: evertech, alt: 'Evertech' },
-  { src: extramarks, alt: 'Extramarks' },
+  { src: '/assets/Logo/accenture.jpg', alt: 'Accenture' },
+  { src: '/assets/Logo/adengineerscontractors.png', alt: 'AD Engineers Contractors' },
+  { src: '/assets/Logo/advanta.png', alt: 'advanta' },
+  { src: '/assets/Logo/ais.jpg', alt: 'ais' },
+  { src: '/assets/Logo/amazon.jpg', alt: 'amazon' },
+  { src: '/assets/Logo/anchor.png', alt: 'anchor' },
+  { src: '/assets/Logo/amber.jpg', alt: 'amber' },
+  { src: '/assets/Logo/aptaracorp.jpg', alt: 'aptaracorp' },
+  { src: '/assets/Logo/aryamasoftservices.jpg', alt: 'aryamasoftservices' },
+  { src: '/assets/Logo/aurobindo.jpg', alt: 'aurobindo' },
+  { src: '/assets/Logo/axis.jpg', alt: 'axis' },
+  { src: '/assets/Logo/drreddys.jpg', alt: "Dr Reddy's" },
+  { src: '/assets/Logo/dupoint.jpg', alt: 'Dupont' },
+  { src: '/assets/Logo/epicresearch.png', alt: 'Epic Research' },
+  { src: '/assets/Logo/evertech.jpg', alt: 'Evertech' },
+  { src: '/assets/Logo/extramarks.jpg', alt: 'Extramarks' },
 ];
 
 const row2Logos = [
-  { src: bajaj, alt: 'bajaj' },
-  { src: biocon, alt: 'biocon' },
-  { src: bplogo, alt: 'bplogo' },
-  { src: byju, alt: 'byju' },
-  { src: capgemini, alt: 'capgemini' },
-  { src: ceat, alt: 'ceat' },
-  { src: cipla, alt: 'cipla' },
-  { src: cs, alt: 'cs' },
-  { src: daffodil, alt: 'Daffodil' },
-  { src: dhoot, alt: 'Dhoot' },
-  { src: focus, alt: 'Focus' },
-  { src: havels, alt: 'Havels' },
-  { src: hcl, alt: 'HCL' },
-  { src: hitachi, alt: 'Hitachi' },
-  { src: honeywell, alt: 'Honeywell' },
-  { src: hp, alt: 'HP' },
-  { src: ibms, alt: 'IBMS' },
-  { src: jaro, alt: 'Jaro' },
-  { src: jd, alt: 'JD' },
+  { src: '/assets/Logo/bajaj.jpg', alt: 'bajaj' },
+  { src: '/assets/Logo/biocon.jpg', alt: 'biocon' },
+  { src: '/assets/Logo/bp-logo.png', alt: 'bplogo' },
+  { src: '/assets/Logo/byju.jpg', alt: 'byju' },
+  { src: '/assets/Logo/capgemini.jpg', alt: 'capgemini' },
+  { src: '/assets/Logo/ceat.jpg', alt: 'ceat' },
+  { src: '/assets/Logo/cipla.jpg', alt: 'cipla' },
+  { src: '/assets/Logo/cs.png', alt: 'cs' },
+  { src: '/assets/Logo/daffodil.jpg', alt: 'Daffodil' },
+  { src: '/assets/Logo/dhoot.jpg', alt: 'Dhoot' },
+  { src: '/assets/Logo/focus.jpg', alt: 'Focus' },
+  { src: '/assets/Logo/havels.jpg', alt: 'Havels' },
+  { src: '/assets/Logo/hcl.jpg', alt: 'HCL' },
+  { src: '/assets/Logo/hitachi.jpg', alt: 'Hitachi' },
+  { src: '/assets/Logo/honeywell.jpg', alt: 'Honeywell' },
+  { src: '/assets/Logo/hp.jpg', alt: 'HP' },
+  { src: '/assets/Logo/ibms.jpg', alt: 'IBMS' },
+  { src: '/assets/Logo/jaro.jpg', alt: 'Jaro' },
+  { src: '/assets/Logo/jd.png', alt: 'JD' },
 ];
 
 const PlacementSection = () => {

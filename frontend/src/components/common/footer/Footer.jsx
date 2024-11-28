@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/Logoshivalik.png";
+
 import {
   FaTwitter,
   FaFacebook,
@@ -161,7 +161,7 @@ const Footer = () => {
         {/* Centered College Info */}
         <div className="text-center">
           <img
-            src={logo}
+            src='/assets/Logoshivalik.png'
             alt="Shivalik College Logo"
             style={{ width: "25rem", height: "auto" }}
             className="mx-auto"

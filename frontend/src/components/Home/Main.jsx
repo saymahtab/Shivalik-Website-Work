@@ -1,12 +1,11 @@
 import React from 'react';
-import './Main.css';
+import '../styles/Main.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import bannerone from '../../assets/final2.jpg';
-import bannertwo from '../../assets/final2.jpg';
+
 const Main = () => {
   return (
-    <div className="main-container">
+    <div className="main-container mt-36">
       {/* Overlay text */}
       <div className="overlay">
         <h1>Shivalik College</h1>
@@ -22,10 +21,10 @@ const Main = () => {
       >
        
         <SwiperSlide>
-          <img src={bannerone} alt="Image 1" className="slider-image" />
+          <img src='/assets/final2.jpg' alt="Image 1" className="slider-image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bannertwo} alt="Image 2" className="slider-image" />
+          <img src='/assets/final2.jpg' alt="Image 2" className="slider-image" />
         </SwiperSlide>
         <SwiperSlide>
           <img src="image3.jpg" alt="Image 3" className="slider-image" />

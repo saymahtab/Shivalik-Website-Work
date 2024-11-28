@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import courses from  '../../assets/courses/coursecollege.jpg'
 
 const CoursesSection = () => {
   const [count, setCount] = useState(0); // State to hold the counter value
@@ -49,7 +48,7 @@ const CoursesSection = () => {
         <div className="relative w-full md:w-3/5 h-auto overflow-hidden rounded-lg shadow-lg flex justify-center items-center">
           {/* Image */}
           <img
-            src= {courses} 
+            src= '/assets/courses/coursecollege.jpg' 
             alt="Demo Placeholder"
             className="w-full h-[480px] object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
           />

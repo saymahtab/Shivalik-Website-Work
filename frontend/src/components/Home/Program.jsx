@@ -2,7 +2,7 @@ import React from 'react';
 import ProgramCard from './ProgramCard';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Program.css'
+import './styles/Program.css'
 const Program = () => {
     const engineeringCourses = [
         { title: "Electronics and Communication Engineering" },

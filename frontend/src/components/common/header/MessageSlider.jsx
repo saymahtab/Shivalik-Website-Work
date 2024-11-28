@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './MessageSlider.css';
+import { useState, useEffect } from 'react';
+import '../../styles/MessageSlider.css';
 
 const MessageSlider = () => {
   const messages = [

@@ -1,26 +1,15 @@
 import React, { useState, useEffect } from "react";
-import robotics from "../../assets/courses/robolicts.jpg";
-import computerscience from "../../assets/courses/computerscience.jpg";
-import bba from "../../assets/courses/bba.jpg";
-import bpharma from "../../assets/courses/bpharma.jpeg";
-import Mechanical from "../../assets/courses/Mechanical.jpg";
-import Electronics from "../../assets/courses/Electronics&Communication.jpg";
-import Agriculture from "../../assets/courses/agriculture.jpg";
-import datascience from "../../assets/courses/datascience.jpg";
-import dpahrmafinal from "../../assets/courses/dpahrmafinal.jpg";
-
 
 const disciplines = [
-  { id: 1, img: datascience, label: "B.Tech Data Science" },
-  { id: 2, img: dpahrmafinal, label: "Diploma of Pharmacy (D.Pharm)" },
-  { id: 3, img: robotics, label: "B.Tech Artificial Intelligence & Machine Learning" },
-  { id: 4, img: computerscience, label: "B.Tech Computer Science and Engineering" },
-  { id: 5, img: bba, label: "Bachelor of Business Administration (BBA)" },
-  { id: 6, img: bpharma, label: "Bachelor of Pharmacy (B.Pharm)" },
-  { id: 7, img: Mechanical, label: "B.Tech Mechanical Engineering" },
-  { id: 8, img: Electronics, label: "B.Tech Electronics & Communication Engineering" },
-  { id: 9, img: Agriculture, label: "B.Sc ( Hons ) Agriculture" },
- 
+  { id: 1, img: '/assets/courses/datascience.jpg', label: "B.Tech Data Science" },
+  { id: 2, img: '/assets/courses/dpahrmafinal.jpg', label: "Diploma of Pharmacy (D.Pharm)" },
+  { id: 3, img: '/assets/courses/robolicts.jpg', label: "B.Tech Artificial Intelligence & Machine Learning" },
+  { id: 4, img: '/assets/courses/computerscience.jpg', label: "B.Tech Computer Science and Engineering" },
+  { id: 5, img: '/assets/courses/bba.jpg', label: "Bachelor of Business Administration (BBA)" },
+  { id: 6, img: '/assets/courses/bpharma.jpeg', label: "Bachelor of Pharmacy (B.Pharm)" },
+  { id: 7, img: '/assets/courses/Mechanical.jpg', label: "B.Tech Mechanical Engineering" },
+  { id: 8, img: '/assets/courses/Electronics&Communication.jpg', label: "B.Tech Electronics & Communication Engineering" },
+  { id: 9, img: '/assets/courses/agriculture.jpg', label: "B.Sc ( Hons ) Agriculture" },
 ];
 
 export default function Carousel() {

@@ -1,5 +1,4 @@
 import React from 'react';
-import collegeimg from '../../assets/college.jpg';
 
 const CollegeIntro = () => {
   return (
@@ -19,7 +18,7 @@ const CollegeIntro = () => {
       
         <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
           <img
-            src={collegeimg} 
+            src='/assets/college.jpg' 
             alt="Shivalik College"
             className="w-120 h-80 rounded-lg shadow-lg "
           />
