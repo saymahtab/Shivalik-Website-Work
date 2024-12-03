@@ -31,7 +31,7 @@ const NewsEvents = () => {
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-center text-4xl text-[#98012e] py-2 font-bold py-8 underline">News & Events</h2>
+        <h2 className="text-center text-4xl text-[#98012e]  font-bold py-8 underline">News & Events</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {events.map((event, index) => (
             <div

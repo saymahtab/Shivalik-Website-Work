@@ -1,8 +1,26 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { FaArrowRight } from 'react-icons/fa';
 
 const CoursesSection = () => {
+  const enggCourses = [
+    "B.Tech Computer Science and Engineering",
+    "B.Tech Artificial Intelligence & Machine Learning",
+    "B.Tech Cyber Security",
+    "B.Tech Data Science",
+    "B.Tech Mechanical Engineering",
+    "B.Tech Electronics & Communication Engineering"
+  ];
+  const otherCourses = [
+    "Bachelor of Business Administration (BBA)",
+    "B.Sc (Hons.) Agriculture",
+    "BCA (AI & ML)",
+    "BCA",
+    "BBA",
+  ];
   const [count, setCount] = useState(0); // State to hold the counter value
   const sectionRef = useRef(null); // Reference to the section
+
 
 
   useEffect(() => {
@@ -48,11 +66,11 @@ const CoursesSection = () => {
         <div className="relative w-full md:w-3/5 h-auto overflow-hidden rounded-lg shadow-lg flex justify-center items-center">
           {/* Image */}
           <img
-            src= '/assets/courses/coursecollege.jpg' 
+            src='/assets/courses/coursecollege.jpg'
             alt="Demo Placeholder"
             className="w-full h-[480px] object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
-          
+
           {/* Counter on Top of Image */}
           <div className="absolute top-4 left-4 bg-white bg-opacity-75 p-2 rounded-lg shadow-lg flex flex-col items-center">
             <h3 className="text-lg font-semibold">{count} +</h3>
@@ -67,30 +85,34 @@ const CoursesSection = () => {
         <div className="w-full md:w-2/5 flex flex-col gap-4">
           {/* Right Top Course List */}
           <div className="relative bg-gray-100 p-4 rounded-lg shadow-md flex-1">
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-[#98012E] opacity-0 hover:opacity-80 transition-opacity duration-300 rounded-lg"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-[#98012E] opacity-0 transition-opacity duration-300 rounded-lg"></div>
             <h3 className="text-xl font-semibold mb-2 relative z-10">Courses Offered in B.Tech </h3>
-            <ul className="space-y-2 relative z-10">
-              <li>B.Tech Computer Science and Engineering</li>
-              <li>B.Tech Artificial Intelligence & Machine Learning</li>
-              <li>B.Tech Cyber Security</li>
-              <li>B.Tech Data Science</li>
-              <li>B.Tech Mechanical Engineering</li>
-              <li>B.Tech Electronics & Communication Engineering</li>
+            <ul className="space-y-2 relative z-10 cursor-pointer">
+              {enggCourses.map((course) => (
+                <li key={course} className="hover:bg-gray-300 rounded px-2 flex justify-between items-center group">
+                  {course}
+                  <FaArrowRight className='mt-1 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Right Bottom Degree List */}
           <div className="relative bg-gray-100 p-4 rounded-lg shadow-md flex-1">
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-[#98012E] opacity-0 hover:opacity-80 transition-opacity duration-300 rounded-lg"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-[#98012E] opacity-0 transition-opacity duration-300 rounded-lg"></div>
             <h3 className="text-xl font-semibold mb-2 relative z-10">Other Programs</h3>
-            <ul className="space-y-2 relative z-10">
-              <li>Bachelor of Business Administration (BBA)</li>
-              <li>B.Sc (Hons.) Agriculture</li>
-              <li>BCA (AI & ML)</li>
-              <li>BCA</li>
-              <li>BBA</li>
-              {/* <li>Bachelor of Pharmacy (B.Pharm)</li>
-              <li>Diploma of Pharmacy (D.Pharm)</li> */}
+            <ul className="space-y-2 relative z-10 cursor-pointer">
+              {otherCourses.map((course) => (
+                <li
+                  key={course}
+                  className="hover:bg-gray-300 rounded px-2 flex justify-between items-center group"
+                >
+                  {course}
+                  <Link to="/" className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <FaArrowRight className="mt-1 mr-2" />
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

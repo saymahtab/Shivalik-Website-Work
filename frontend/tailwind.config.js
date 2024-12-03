@@ -24,6 +24,10 @@ export default {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(100%)' },
         },
+        marquee: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
         zoomInOut: {
           '0%, 100%': { transform: 'scale(1)', opacity: '1' }, // Full size, full opacity
           '50%': { transform: 'scale(0.9)', opacity: '0.7' },  // Slightly reduced size, slightly faded
@@ -32,6 +36,7 @@ export default {
       animation: {
         'marquee-left': 'marqueeLeft 50s linear infinite',
         'marquee-right': 'marqueeRight 40s linear infinite',
+        'marquee': "marquee 20s linear infinite",
         'zoomInOut': 'zoomInOut 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite',
       },
       textColor: {

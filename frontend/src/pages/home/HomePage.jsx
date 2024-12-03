@@ -1,5 +1,5 @@
 import '../../App.css';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState , useRef } from 'react';
 import NavBar from '../../components/common/header/NavBar';
 import Sidebar from '../../components/Home/Sidebar';
 import '../../components/styles/Sidebar.css';
@@ -17,14 +17,38 @@ import AwardsSection from '../../components/Home/AwardsSection';
 import Popup from '../../components/Home/Popup';
 import ShivalikLabs from '../../components/Home/ShivalikLabs';
 import LogoLoader from '../../components/Loader/loader';
+import FixedFooter from '../../components/common/footer/fixedFooter';
 
 const HomePage = () => {
   const [isLoader, setIsLoader] = useState(true);
+  const [isScroll, setIsScroll] = useState(false);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll === 0) {
+        setIsScroll(false);
+      } else if (currentScroll > lastScrollY.current) {
+        setIsScroll(true);
+      } else if (currentScroll < 500 && currentScroll < lastScrollY.current) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+
+      lastScrollY.current = currentScroll;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoader(false);
-    }, 4000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   })
@@ -49,6 +73,7 @@ const HomePage = () => {
           <PlacementMenu />
           <Placement />
           <Footer />
+          {isScroll && <FixedFooter /> }
           <Popup />
         </div>
       )}
