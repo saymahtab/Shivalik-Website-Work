@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AcademicMenu = () => {
   return (
@@ -109,9 +110,9 @@ const AcademicMenu = () => {
           </h4>
           <ul className="space-y-2 text-gray-700">
             <li>
-              <a href="#bpharm" className="hover:text-blue-600">
+              <Link to='/courses/pharma' className="hover:text-blue-600">
                 Bachelor of Pharmacy (B.Pharm)
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#bpharm-lateral" className="hover:text-blue-600">

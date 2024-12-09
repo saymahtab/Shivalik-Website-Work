@@ -1,7 +1,8 @@
 import "./App.css";
-import React , {useState , useEffect}  from 'react';
+import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/home/HomePage";
+import PharmaPage from"./pages/coursePage/pharmaPage";
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/courses" element={<PharmaPage />} />
       </Routes>
     </div>
   );

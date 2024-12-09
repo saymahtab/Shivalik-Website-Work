@@ -5,7 +5,7 @@ import RunningText from "./runningMessageFooter";
 
 const FixedFooter = () => {
     return (
-        <footer className="fixed bottom-14 rounded w-full z-50 text-white transition-all duration-500 ease-in-out transform translate-y-full hover:translate-y-0">
+        <footer className="fixed bottom-2 rounded w-full z-50 text-white ">
             <div className="flex justify-between items-center pl-6">
                 <div className="text-sm bg-amber-400 w-2/3 p-3 h-12 rounded-md">
                     <RunningText />

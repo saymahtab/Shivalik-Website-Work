@@ -15,7 +15,7 @@ const CollegeIntro = () => {
 
 
       <div className="relative flex items-center justify-center px-4 text-white">
-        <div className="w-full md:w-3/4 lg:w-1/2 text-center">
+        <div className="w-full md:w-3/4 lg:w-2/3 text-center">
           <h1 className="text-4xl font-semibold mb-1">SHIVALIK COLLEGE DEHRADUN</h1>
           <h1 className="text-4xl font-bold">
             The Best Private College in Dehradun, Uttrakhand
@@ -34,7 +34,7 @@ const CollegeIntro = () => {
             them to achieve their dreams and goals as global citizens.
           </p>
           <div className="flex justify-center mt-3">
-            <button className="bg-blue-800 flex items-center rounded-full px-4 py-2 shadow-xl shadow-inner hover:shadow-2xl hover:bg-customed transition-all duration-300 ease-in-out">
+            <button className="bg-blue-800 flex items-center rounded-full px-6 py-2 shadow-xl  hover:shadow-2xl hover:bg-customed transition-all duration-300 ease-in-out">
               Know More
               <FaArrowRight className="ml-3" />
             </button>

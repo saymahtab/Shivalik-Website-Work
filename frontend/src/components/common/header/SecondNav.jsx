@@ -11,9 +11,7 @@ const SecondNav = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div 
-      className="flex justify-between items-center bg-white shadow-md py-2 px-3  w-full z-50 "
-    >
+    <div className=" relative flex justify-between items-center bg-white shadow-md py-2 px-3  w-full  ">
       {/* Logo */}
       <div className="w-[270px]">
         <img
@@ -25,9 +23,8 @@ const SecondNav = () => {
 
       {/* Navigation Links */}
       <nav
-        className={`${
-          isMenuOpen ? "block" : "hidden"
-        } sm:flex flex-col gap-7 sm:flex-row sm:items-center sm:justify-between`}
+        className={`${isMenuOpen ? "block" : "hidden"
+          } sm:flex flex-col gap-7 sm:flex-row sm:items-center sm:justify-between`}
       >
         <ul className="lg:flex hidden gap-8 text-gray-800 font-bold text-sm nav-list">
           <li className="group">

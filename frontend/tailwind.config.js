@@ -14,6 +14,7 @@ export default {
         black: '#000000', // Ensure black is defined
         customBlue: '#20659e',
         customed: '#98012E',
+        'custom-gray': '#EEEEEE',
       },
       keyframes: {
         marqueeLeft: {

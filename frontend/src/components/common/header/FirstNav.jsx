@@ -3,7 +3,7 @@ import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const FirstNav = () => {
   return (
-    <div className="flex flex-wrap justify-between items-center bg-gray-100 py-4 px-6 sm:flex-nowrap sm:py-2 sm:px-4  top-0 z-50 w-full">
+    <div className="flex flex-wrap justify-between items-center bg-gray-100 py-4 px-6 sm:flex-nowrap sm:py-2 sm:px-4  top-0 w-full">
       <div className="flex flex-wrap gap-2 text-gray-600 items-center sm:gap-4">
         <a
           href="#facebook"
